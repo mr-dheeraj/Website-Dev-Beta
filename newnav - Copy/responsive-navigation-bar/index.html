@@ -8,18 +8,22 @@
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
         <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="styles.css">
+
         <link rel="stylesheet" href="assets/css/styles.css">
         <link rel="stylesheet" href="assets_home/css/styles.css">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="assets_team/style.css">
+
         <link rel="icon" href="assets/inulute_icn.ico" type="image/x-icon" />
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
-        <title>Responsive navigation bar - Bedimcode</title>
+    <!-- Fontawesome Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="assets_team/script.js" defer></script>
+        <title>SDSCTUP</title>
     </head>
     <body>
         <!--=============== HEADER ===============-->
         <header class="header">
-         &nbsp;☎️ <b>Helpline No. -902838283 </b>                   
 
             <nav class="nav container">
                 <div class="nav__data">
@@ -203,6 +207,10 @@
                         </li>
 
                         <li>
+                            <a href="#upi" class="nav__link" >Donate</a>
+                        </li>
+
+                        <li>
                             <a href="login.html" class="nav__link" >Login / Register</a>
                         </li>
 
@@ -219,6 +227,50 @@
             </nav>
 
         </header>
+
+       
+
+        <div class="bodya">
+            <div class="wrapper">
+          <i id="left" class="fa-solid fa-angle-left"></i>
+          <ul class="carousel">
+            <li class="card">
+              <div class="img"><img src="images/img-1.jpg" alt="img" draggable="false"></div>
+              <h2>Jitendra Chauhan</h2>
+              <span>Joint Secretary</span>
+            </li>
+            <li class="card">
+              <div class="img"><img src="images/img-2.jpg" alt="img" draggable="false"></div>
+              <h2>Sumit Chauhan</h2>
+              <span>Web Developer</span>
+            </li>
+            <li class="card">
+              <div class="img"><img src="images/img-3.jpg" alt="img" draggable="false"></div>
+              <h2>Dheeraj Pratap Singh</h2>
+              <span>Tech Support</span>
+            </li>
+            <li class="card">
+              <div class="img"><img src="images/img-4.jpg" alt="img" draggable="false"></div>
+              <h2>RamPrakash Mishra</h2>
+              <span>Committee Member</span>
+            </li>
+            <li class="card">
+              <div class="img"><img src="images/img-5.jpg" alt="img" draggable="false"></div>
+              <h2>Gaurav Sangha</h2>
+              <span>Bank Manager</span>
+            </li>
+            <li class="card">
+              <div class="img"><img src="images/img-6.jpg" alt="img" draggable="false"></div>
+              <h2>Sumit Chauhan</h2>
+              <span>App Designer</span>
+            </li>
+          </ul>
+          <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+        </div>
+
+    <hr>
+      
   <!--========== HOME ==========-->
   <section class="home" id="home">
     <div class="home__container bd-container bd-grid">
@@ -231,25 +283,24 @@
         <img src="assets_home/img/home.png" alt="" class="home__img">
     </div>
 </section>
-
+<hr>
 <!--========== ABOUT ==========-->
 <section class="about section bd-container" id="about">
     <div class="about__container  bd-grid">
         <div class="about__data">
-            <span class="section-subtitle about__initial">About us</span>
-            <h2 class="section-title about__initial">We cook the best <br> tasty food</h2>
-            <p class="about__description">We cook the best food in the entire city, with excellent customer service, the best meals and at the best price, visit us.</p>
-            <a href="#" class="button" >Explore history</a>
+            <h2 class="section-title about__initial">दूसरों को सहयोग देना ही,
+                उन्हें अपना सहयोगी बनाना है !! <br><br> अपना महत्वपूर्ण सहयोग देने के लिए नीचे दिया गया क्यूआर स्कैन करें</h2>
         </div>
 
-        <img src="assets/img/about.jpg" alt="" class="about__img">
+        <img src="assets/img/abouts.jpg" alt="" class="about__img">
     </div>
 </section>
+<hr>
 
-<div class="container_upi">
+<div class="container_upi" id="upi">
     <div class="qr-container">
         <div class="qr-code">
-            <img src="images/assets/qr-code.png" alt="UPI QR Code">
+            <img src="images/assets/upi_favicon.jpeg" alt="UPI QR Code">
         </div>
         <div class="upi-id">
             <p>Scan the QR code or use the UPI ID:</p>
@@ -298,9 +349,10 @@
 });
 });
 </script>
+<hr>
+<!----team page-->
 
 
-     
     
   
         
