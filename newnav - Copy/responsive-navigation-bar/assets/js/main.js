@@ -34,6 +34,7 @@ dropdownItems.forEach((item) =>{
         }
     })
 })
+// 4. 
 
 // 3. Create a function to display the dropdown
 const toggleItem = (item) =>{
