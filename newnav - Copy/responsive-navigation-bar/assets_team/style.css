@@ -3,11 +3,11 @@
 
 .bodya {
     display: flex;
-    padding: 0 45px;
+    padding: 155px 45px;
     align-items: center;
     justify-content: center;
     min-height: 65vh;
-    background: linear-gradient(to left top, #bbc3ee, #9c73ec);
+    background: linear-gradient(to left top, #c4f5d8, #75dd8f);
   }
 .wrapper {
   max-width: 1100px;
@@ -79,7 +79,7 @@
   border-radius: 8px;
 }
 .carousel .card .img {
-  background: #8B53FF;
+  background: #38ac5f;
   height: 148px;
   width: 148px;
   border-radius: 50%;

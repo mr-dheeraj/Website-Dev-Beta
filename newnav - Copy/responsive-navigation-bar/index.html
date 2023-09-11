@@ -8,20 +8,23 @@
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
         <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="styles.css">
-
+        
         <link rel="stylesheet" href="assets/css/styles.css">
         <link rel="stylesheet" href="assets_home/css/styles.css">
         <link rel="stylesheet" href="assets_team/style.css">
+        <link rel="stylesheet" href="styles.css">
 
         <link rel="icon" href="assets/inulute_icn.ico" type="image/x-icon" />
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <!-- Fontawesome Link for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
     <script src="assets_team/script.js" defer></script>
         <title>SDSCTUP</title>
     </head>
     <body>
+
         <!--=============== HEADER ===============-->
         <header class="header">
 
@@ -205,7 +208,9 @@
                                 </div>
                             </div>
                         </li>
-
+                        <li>
+                            <a href="#contact" class="nav__link" >About</a>
+                        </li>
                         <li>
                             <a href="#upi" class="nav__link" >Donate</a>
                         </li>
@@ -229,7 +234,7 @@
         </header>
 
        
-
+        <div class="position-relative marquee-container d-none d-sm-block"> <div class="marquee d-flex justify-content-around"> <span><b>केवल टेलीग्राम ग्रुप से जुड़ने या केवल रजिस्ट्रेशन कर देने से कोई भी वैधानिक सदस्य नही माना जायेगा, नियमावली के अंतर्गत सहयोग करना अनिवार्य रहेगा। सहयोग करके अपनी प्रोफाइल पर रसीद अपलोड करिये।</b></span> </div> </div>  <a href="https://api.whatsapp.com/send?phone=12345&text=&source=&data=" class="whatsApp" target="_blank"><i class="fa fa-whatsapp my-whatsApp"></i></a>
         <div class="bodya">
             <div class="wrapper">
           <i id="left" class="fa-solid fa-angle-left"></i>
@@ -270,17 +275,18 @@
         </div>
 
     <hr>
-      
+      <!--marqeee-->
+    
   <!--========== HOME ==========-->
   <section class="home" id="home">
     <div class="home__container bd-container bd-grid">
         <div class="home__data">
-            <h1 class="home__title">Tasty food</h1>
-            <h2 class="home__subtitle">Try the best food of <br> the week.</h2>
-            <a href="login.html" id="button">View Menu</a>
+            <h1 class="home__title">Emergency</h1>
+            <h2 class="home__subtitle">आपातकालीन हेल्पलाइन नंबर उपलब्ध: सुबह 10 बजे से शाम 5 बजे तक </h2>
+            <a href="login.html" id="button">Helpline Call</a>
         </div>
 
-        <img src="assets_home/img/home.png" alt="" class="home__img">
+        <img src="assets_home/img/helpline.jpg" alt="" class="home__img" id="myImg">
     </div>
 </section>
 <hr>
@@ -288,11 +294,15 @@
 <section class="about section bd-container" id="about">
     <div class="about__container  bd-grid">
         <div class="about__data">
+            <h1 class="home__title">Donate</h1>
+
             <h2 class="section-title about__initial">दूसरों को सहयोग देना ही,
                 उन्हें अपना सहयोगी बनाना है !! <br><br> अपना महत्वपूर्ण सहयोग देने के लिए नीचे दिया गया क्यूआर स्कैन करें</h2>
+                <a href="#upi" id="button">Donate</a>
+
         </div>
 
-        <img src="assets/img/abouts.jpg" alt="" class="about__img">
+        <img src="assets/img/donatess.png" alt="" class="about__img" id="myImg" width="200px">
     </div>
 </section>
 <hr>
@@ -352,8 +362,75 @@
 <hr>
 <!----team page-->
 
+            <!--========== CONTACT US ==========-->
+            <section class="contact section bd-container" id="contact">
+                <div class="contact__container bd-grid">
+                    <div class="contact__data">
+                        <span class="section-subtitle contact__initial">Let's talk</span>
+                        <h2 class="section-title contact__initial">Contact us</h2>
+                        <p class="contact__description">contact us and we will attend you quickly, with our 24/7 chat service.</p>
+                    </div>
 
-    
+                    <div class="contact__button">
+                        <a href="#" class="button">Contact us now</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section bd-container">
+            <div class="footer__container bd-grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">SDSCT [U.P]</a>
+                    <span class="footer__description">स्वयं सहायता समूह</span>
+                    <div>
+                        <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Services</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">help</a></li>
+                        <li><a href="#" class="footer__link">help</a></li>
+                        <li><a href="#" class="footer__link">help</a></li>
+                        <li><a href="#" class="footer__link">help</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Information</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Event</a></li>
+                        <li><a href="#" class="footer__link">Contact us</a></li>
+                        <li><a href="#" class="footer__link">Privacy policy</a></li>
+                        <li><a href="#" class="footer__link">Terms of services</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Adress</h3>
+                    <ul>
+                        <li>Lima - Peru</li>
+                        <li>Jr Union #999</li>
+                        <li>999 - 888 - 777</li>
+                        <li>admin@sdsctup.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; 2023 SDSCTUP. All right reserved</p>
+        </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+
+<a href="https://api.whatsapp.com/send?phone=12345&text=&source=&data=" class="whatsApp" target="_blank"><i class="fa fa-whatsapp my-whatsApp"></i></a>
+
   
         
         <!--=============== MAIN JS ===============-->

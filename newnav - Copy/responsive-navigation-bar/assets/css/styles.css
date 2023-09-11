@@ -6,8 +6,8 @@
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
    /*========== Colors ==========*/
-   --first-color: #069C54;
-   --first-color-alt: #048654;
+   --first-color: #069c6f;
+   --first-color-alt: #18bd62;
    --title-color: #393939;
    --text-color: #707070;
    --text-color-light: #A6A6A6;
@@ -368,3 +368,57 @@ a {
 }
 
 /* team styles */
+.marquee-container {
+  height: 30px;
+  overflow: hidden;
+  line-height: 30px;
+
+  .marquee {
+    top: 0;
+    left: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    animation: marquee 15s linear infinite;
+  }
+
+  .marquee2 {
+    animation-delay: 15s;
+  }
+  b {
+    padding-left: 10px;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%
+  }
+}
+.whatsApp{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  left:40px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.my-whatsApp{
+  margin-top:16px;
+}
+
+
+#myImg {
+  filter: drop-shadow(-10px -10px 10px rgb(93, 114, 97));
+}
+
