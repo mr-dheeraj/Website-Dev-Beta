@@ -385,9 +385,7 @@ a {
   .marquee2 {
     animation-delay: 15s;
   }
-  b {
-    padding-left: 10px;
-  }
+  
 }
 
 @keyframes marquee {
@@ -421,3 +419,11 @@ a {
   filter: drop-shadow(-10px -10px 10px rgb(93, 114, 97));
 }
 
+.marquee-container {
+  position: absolute; 
+  width: 100%;
+  overflow: hidden;
+  line-height: 30px;
+  top: 7rem;
+  left: 4rem;
+}
