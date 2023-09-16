@@ -390,7 +390,7 @@ a {
     position: absolute;
     white-space: nowrap;
     animation: marquee 15s linear infinite;
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .marquee2 {
