@@ -80,7 +80,6 @@ a {
 
 /*=============== HEADER ===============*/
 .header {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -143,9 +142,10 @@ a {
     padding-block: 1.5rem 4rem;
     pointer-events: none;
     opacity: 0;
+    z-index: 2;
     transition: top 0.4s, opacity 0.3s;
   }
-  .nav__menu::-webkit-scrollbar {
+  .-togg__menu::-webkit-scrollbar {
     width: 0.5rem;
   }
   .nav__menu::-webkit-scrollbar-thumb {
@@ -372,23 +372,31 @@ a {
   height: 30px;
   overflow: hidden;
   line-height: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative; /* Add this line */
+  max-width: 100%; /* Ensure the marquee doesn't overflow its container */
+
+  /* Add the following styles to prevent horizontal scrolling */
+  overflow-x: hidden;
+  width: 100%;
+  box-sizing: border-box;
 
   .marquee {
     top: 0;
     left: 100%;
-    width: 100%;
+    width: max-content; /* Change this to 'max-content' or a specific width */
     overflow: hidden;
     position: absolute;
     white-space: nowrap;
     animation: marquee 15s linear infinite;
+    font-size: 18px;
   }
 
   .marquee2 {
     animation-delay: 15s;
   }
-  b {
-    padding-left: 10px;
-  }
+  
 }
 
 @keyframes marquee {
@@ -422,3 +430,12 @@ a {
   filter: drop-shadow(-10px -10px 10px rgb(93, 114, 97));
 }
 
+.marquee-container {
+  position: absolute; 
+  width: 200%;
+  overflow: hidden;
+  line-height: 30px;
+  top: 7rem;
+  left: 0rem;
+}
+/*  */

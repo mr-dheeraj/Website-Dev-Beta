@@ -1,4 +1,6 @@
 /*=============== SHOW MENU ===============*/
+
+
 const showMenu = (toggleId, navId) =>{
    const toggle = document.getElementById(toggleId),
          nav = document.getElementById(navId)
@@ -12,6 +14,12 @@ const showMenu = (toggleId, navId) =>{
 }
 
 showMenu('nav-toggle','nav-menu')
+// function toggleMenu() {
+//     const menu = document.getElementById('nav-menu');
+//     const overlay = document.getElementById('overlay');
+//     menu.classList.toggle('active');
+//     overlay.classList.toggle('active');
+// }
 
 /*=============== SHOW DROPDOWN MENU ===============*/
 const dropdownItems = document.querySelectorAll('.dropdown__item')

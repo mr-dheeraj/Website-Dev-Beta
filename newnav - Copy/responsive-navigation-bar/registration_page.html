@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+<body>
+    <div id="header-placeholder"></div>
+    
+
+    <script>
+        // Use JavaScript to fetch and insert the header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(headerHTML => {
+                document.getElementById('header-placeholder').innerHTML = headerHTML;
+            });
+    </script>
+    <div class="container mt-5">
+        <div class="col-md-6 offset-md-3">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="text-center">User Registration</h2>
+                </div>
+                <div class="card-body">
+                    <form action="registration_process.php" method="POST">
+                        <div class="form-group">
+                            <label for="ehrms_code">Ehrms कोड *</label>
+                            <input type="text" class="form-control" id="ehrms_code" name="ehrms_code" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">पासवर्ड बनाये *</label>
+                            <input type="password" class="form-control" id="password" name="password" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="confirm_password">कन्फर्म पासवर्ड *</label>
+                            <input type="password" class="form-control" id="confirm_password" name="confirm_password" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="name">नाम *</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="date_of_birth">डेट ऑफ बर्थ (dd-mm-yyyy) *</label>
+                            <input type="text" class="form-control" id="date_of_birth" name="date_of_birth" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">ईमेल *</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="gender">जेंडर *</label>
+                            <select class="form-control" id="gender" name="gender" required>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="blood_group">Blood group *</label>
+                            <select class="form-control" id="blood_group" name="blood_group" required>
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="department">डिपार्टमेंट *</label>
+                            <select class="form-control" id="department" name="department" required>
+                                <option value="department1">Department 1</option>
+                                <option value="department2">Department 2</option>
+                                <option value="department3">Department 3</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="post">पदनाम *</label>
+                            <select class="form-control" id="post" name="post" required>
+                                <option value="post1">Post 1</option>
+                                <option value="post2">Post 2</option>
+                                <option value="post3">Post 3</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="school_name">विद्यालय का नाम *</label>
+                            <input type="text" class="form-control" id="school_name" name="school_name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="posting_block">पोस्टिंग ब्लाक *</label>
+                            <input type="text" class="form-control" id="posting_block" name="posting_block" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="state">प्रदेश *</label>
+                            <select class="form-control" id="state" name="state" required>
+                                <option value="state1">State 1</option>
+                                <option value="state2">State 2</option>
+                                <option value="state3">State 3</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="district">पोस्टिंग जिला *</label>
+                            <select class="form-control" id="district" name="district" required>
+                                <option value="district1">District 1</option>
+                                <option value="district2">District 2</option>
+                                <option value="district3">District 3</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="home_address">होम एड्रेस *</label>
+                            <input type="text" class="form-control" id="home_address" name="home_address" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="home_district">होम डिस्ट्रिक्ट *</label>
+                            <select class="form-control" id="home_district" name="home_district" required>
+                                <option value="home_district1">Home District 1</option>
+                                <option value="home_district2">Home District 2</option>
+                                <option value="home_district3">Home District 3</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="relative1_name">नामिनी 1 *</label>
+                            <input type="text" class="form-control" id="relative1_name" name="relative1_name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="relative1_relationship">नामिनी से सम्बन्ध *</label>
+                            <input type="text" class="form-control" id="relative1_relationship" name="relative1_relationship" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="relative1_mobile">नामिनी 1 का मोबाइल *</label>
+                            <input type="text" class="form-control" id="relative1_mobile" name="relative1_mobile" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="relative2_name">( नामिनी 2 )</label>
+                            <input type="text" class="form-control" id="relative2_name" name="relative2_name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="relative2_relationship">( नामिनी 2 से सम्बन्ध )</label>
+                            <input type="text" class="form-control" id="relative2_relationship" name="relative2_relationship">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="relative2_mobile">( नामिनी 2 का मोबाइल )</label>
+                            <input type="text" class="form-control" id="relative2_mobile" name="relative2_mobile">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="disease">बीमारी (यदि कोई हो तो) *</label>
+                            <input type="text" class="form-control" id="disease" name="disease" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="disease_description">बीमारी का विवरण(कब से है, अन्य की स्थिति में बीमारी का नाम भी लिखें)) *</label>
+                            <input type="text" class="form-control" id="disease_description" name="disease_description" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>क्या पूर्व में रजिस्ट्रेशन कर चुके हैं? हां/नही *</label>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="registration_yes" name="registration" value="yes" required>
+                                <label class="form-check-label" for="registration_yes">हा</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="registration_no" name="registration" value="no" required>
+                                <label class="form-check-label" for="registration_no">नही</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mobile">मोबाइल * (For Login ID)</label>
+                            <input type="text" class="form-control" id="mobile" name="mobile" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="home_mobile">मोबाइल होम</label>
+                            <input type="text" class="form-control" id="home_mobile" name="home_mobile">
+                        </div>
+
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="announcement" name="announcement">
+                            <label class="form-check-label" for="announcement">घोषणा</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS and jQuery (Optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
